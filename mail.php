@@ -8,7 +8,7 @@ $message = $_POST["message"];
 $EmailTo = "000.lunchbox@gmail.com";
 $Title = "New Message Received";
 
-// prepare email body text
+//  prepare email body text
 $Fields .= "Name: ";
 $Fields .= $name;
 $Fields .= "\n";
@@ -26,6 +26,6 @@ $Fields .= $message;
 $Fields .= "\n";
 
 
-// send email
+//  send email
 $success = mail($EmailTo,  $Title,  $Fields, "From:".$email);
 
